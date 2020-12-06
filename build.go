@@ -15,6 +15,7 @@ import (
 // BuildImage builds a simple container image from a single layer and uploads it
 // to a repository
 func (c *Client) BuildImage(imageConfig *ImageConfig, layer []byte) error {
+	println("Hi from fork")
 
 	dig := digest.FromBytes(layer)
 
